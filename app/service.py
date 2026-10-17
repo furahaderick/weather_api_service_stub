@@ -12,6 +12,8 @@ logger = logging.getLogger(__name__)
 
 
 class WeatherService:
+    """Defines the weather service"""
+
     def __init__(self, provider: WeatherProvider) -> None:
         self.provider = provider
         self.valid_api_key = "super_secret_key"
