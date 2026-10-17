@@ -1,10 +1,10 @@
 class InvalidAPIKeyException(Exception):
-    pass
+    """Raised when service receives an invalid api key"""
 
 
 class CityNotFoundException(Exception):
-    pass
+    """Raised when a city is not found in our city database"""
 
 
 class EmptyCityNameException(Exception):
-    pass
+    """Raised when service receives an empty city name as input"""
