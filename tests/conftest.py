@@ -8,10 +8,10 @@ from app.service import WeatherService
 
 
 @pytest.fixture
-def provider():
+def provider() -> WeatherProvider:
     return MockWeatherProvider()
 
 
 @pytest.fixture
-def service(provider: WeatherProvider):
+def service(provider: WeatherProvider) -> WeatherService:
     return WeatherService(provider=provider)
